@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter-Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+<body>
+
+  <!-- Header başlangıç -->
+  <nav class="navbar  navbar-expand-lg navbar-dark p-md-3">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"> <img src="/logo.png" alt=""> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="wrap">
+          <div class="search">
+             <input type="text" class="searchTerm" placeholder="Ne aramıştınız?">
+             <button type="submit" class="searchButton">
+               <i class="fa fa-search"></i>
+            </button>
+          </div>
+       </div>
+        <div class="mx-auto">
+     
+        </div>
+        <ul class="navbar-nav  m-4 m-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">#Keşfet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Anasayfa</a>
+          </li>
+          <li class="nav-item">
+</ul>
+          <button type="button" class="sign-in btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">Giriş Yap <i class="fa fa-sign-in" aria-hidden="true"></i></button>
+        </div>
+    </div>
+</div>
+
+
+</nav>
+<!--Header Son -->
+
+<!-- Giriş yap -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="border-radius: 1rem;">
+      <div class="login-card p-5 text-center text-white" style="border-radius: 1rem;">
+            <div class="pb-5">
+              <h2 class="fw-bold mb-2 text-uppercase">Giriş</h2>
+              <p class="text-white-50 mb-5">Lütfen kullanıcı adı ve parolanızı giriniz!</p>
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="typeEmailX" class="form-control form-control-lg" />
+                <label class="form-label" for="typeEmailX">Kullanıcı adı</label>
+              </div>
+              <div class="form-outline form-white mb-4">
+                <input type="password" id="typePasswordX" class="form-control form-control-lg" />
+                <label class="form-label" for="typePasswordX">Parola</label>
+              </div>
+              <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Parolanızımı unuttunuz?</a></p> 
+              <button class="btn btn-outline-light btn-lg px-5" type="submit">Giriş Yap</button>
+              <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                <a href="#!" class="icon-facebook"><i class="fab fa-facebook-f fa-lg"></i></a>
+                <a href="#!" class="icon-twitter"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
+                <a href="#!" class="icon-google"><i class="fab fa-google fa-lg"></i></a>
+              </div>
+            </div>
+            <div>
+              <p class="mb-0">Hesabınız yok mu? <a href="#!" class="text-white-50 fw-bold">Hemen üye ol</a>
+              </p>
+            </div>
+          </div>
+        </div> 
+    </div>
+  </div>
+
+  <!-- Giriş yap son -->
+
+<div class="container mt-5">
+    <div class="row">     
+      <!---Post Card başlangıç-->
+        <div class="post-card col-xl-8 p-4">
+                    <div class="row mb-4 py-4">
+                        <div class="profile-img col-xl-4">
+                    <div class="text-center p-2">Profil Fotoğrafı</div>
+                    <div class="card-body text-center"> <img class="img-account-profile rounded-circle mb-2" style="width: 120px; height: 120px;" src="/ben.JPG" alt=""><div class="small font-italic text-muted mb-4">Yükleyeceğiniz profil fotoğrafı 5 MB'dan fazla olmamalıdır.</div> <button class="follow-btn mb-2" role="button">Seç</button></div>
+                </div>
+                <div class="col-xl-8">
+                        <div class="profile-body mb-4 d-flex">
+                            <form>
+                                <!-- Form Group (username)-->
+                                <div class="mb-3">
+                                    <label class="small mb-1" for="inputUsername">Kullanıcı adınız</label>
+                                    <input class="form-control" id="inputUsername" type="text" placeholder="Enter your username" value="Emre">
+                                </div>
+                                <!-- Form Row-->
+                                <div class="row gx-3 mb-3">
+                                    <!-- Form Group (first name)-->
+                                    <div class="col-md-6">
+                                        <label class="small mb-1" for="inputFirstName">İsim</label>
+                                        <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" value="Emre">
+                                    </div>
+                                    <!-- Form Group (last name)-->
+                                    <div class="col-md-6">
+                                        <label class="small mb-1" for="inputLastName">Soyad</label>
+                                        <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" value="Sarıgül">
+                                    </div>
+                                </div>
+                                <!-- Form Row        -->
+                                <div class="row gx-3 mb-3">
+                                </div>
+                                <!-- Form Group (email address)-->
+                                <div class="mb-3">
+                                    <label class="small mb-1" for="inputEmailAddress">E-mail</label>
+                                    <input class="form-control" id="inputEmailAddress" type="email" placeholder="Enter your email address" value="emre-sarigul@outlook.com">
+                                </div>
+                                <!-- Form Row-->
+                                <div class="row gx-3 mb-3">
+                                    <!-- Form Group (phone number)-->
+                                    <div class="col-md-6">
+                                        <label class="small mb-1" for="inputPhone">Telefon Numarası</label>
+                                        <input class="form-control" id="inputPhone" type="tel" placeholder="Enter your phone number" value="537 811 78 18">
+                                    </div>
+                                    <!-- Form Group (birthday)-->
+                                    <div class="col-md-6">
+                                        <label class="small mb-1" for="inputBirthday">Doğum Tarihi</label>
+                                        <input class="form-control" id="inputBirthday" type="text" name="birthday" placeholder="Doğum Tarihi Giriniz" value="16/10/1995">
+                                    </div>
+                                </div>
+                                <!-- Save changes button-->
+                                <button class="follow-btn mb-2" role="button">Değişiklikleri Kaydet</button>
+                            </form>
+                            </div>
+                        </div>    
+                    </div>
+        <!---Kategori Başlangıç-->
+      </div>
+      <div class="categories col-xl-4 p-4 ">
+          <h4 class="text-center">Bu gün Trendlerde neler var</h4>
+          <hr>
+          <div class="trend-card-background">
+              <div class="trend-card">
+                  <ul class="list-style-type: none;">
+                      <a class="trend-post text-decoration-none" href="">
+                          <li>
+                              <h6 class="py-2">Python</h6>
+                              <p>flasköğreniyorum</p>
+                          </li>
+                      </a>         
+                  </ul>                
+              </div>
+              
+              <div class="trend-card mt-2">
+                  <ul class="list-style-type: none;">
+                      <a class="trend-post text-decoration-none" href="">
+                          <li>
+                              <h6 class="py-2">django</h6>
+                              <p>#harikaFramework</p>
+                          </li>
+                      </a>         
+                  </ul>                
+              </div>
+              <div class="trend-card mt-2">
+                  <ul class="list-style-type: none;">
+                      <a class="trend-post text-decoration-none" href="">
+                          <li>
+                              <h6 class="py-2">Python</h6>
+                              <p>flasköğreniyorum</p>
+                          </li>
+                      </a>         
+                  </ul>                
+              </div>
+          </div>
+          <!---Takip Et Kategorisi-->
+          <h4 class="text-center mt-5">Takip Edebileceğin Kullanıcılar</h4>
+          <hr>
+          <div class="container">
+              <div class="row">
+                <div class="col-sm-12 col-xl-6 mb-4">
+                    <div class="follow" style="width: 18rem;">
+                        <img src="/ben.JPG" alt="Image" class="follow-img-profile mx-auto d-block mt-3 mb-2" style="width: 60px; height: 60px;" >                    <div class="follow-body">
+                          <h6 class="text-center card-title mb-2">Emre Sarıgül</h6>
+                          <div class="follow-button text-center">
+                              <button class="follow-btn mb-2" role="button">Takip Et!</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-xl-6 mb-4">
+                    <div class="follow" style="width: 18rem;">
+                        <img src="/users.jpg" alt="Image" class="follow-img-profile mx-auto d-block mt-3 mb-2" style="width: 60px; height: 60px;" >                    <div class="follow-body">
+                          <h6 class="text-center card-title mb-2">Furkan Yılmaz</h6>
+                          <div class="follow-button text-center">
+                              <button class="follow-btn mb-2" role="button">Takip Et!</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-xl-6 mb-4">
+                    <div class="follow" style="width: 18rem;">
+                        <img src="/users_2.jpg" alt="Image" class="follow-img-profile mx-auto d-block mt-3 mb-2" style="width: 60px; height: 60px;" >                    <div class="follow-body">
+                          <h6 class="text-center card-title mb-2">Didem Aksoy</h6>
+                          <div class="follow-button text-center">
+                              <button class="follow-btn mb-2" role="button">Takip Et!</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-xl-6 mb-4">
+                    <div class="follow" style="width: 18rem;">
+                        <img src="/users_3.JPG" alt="Image" class="follow-img-profile mx-auto d-block mt-3 mb-2" style="width: 60px; height: 60px;" >                    <div class="follow-body">
+                          <h6 class="text-center card-title mb-2">Çiçek Birsu</h6>
+                          <div class="follow-button text-center">
+                              <button class="follow-btn mb-2" role="button">Takip Et!</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+        </div>          
+    </div>
+
+  </div>
+</div> 
+<!--POST Son-->
+<script link="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
