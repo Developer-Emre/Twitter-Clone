@@ -1,0 +1,233 @@
+body{background: rgb(247, 245, 245);
+
+}
+a{
+    color: black;
+}
+.icon-facebook, .icon-twitter,.icon-google{
+    color: rgb(255, 255, 255) !important;
+}
+
+/*Header-Css*/
+
+
+.navbar{
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #FF9A5A;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    color: #000000;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #FF9A5A;
+    background: #FF9A5A;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .wrap{
+    width: 30%;
+    justify-content: start;
+  }
+  
+
+
+h6{color: black;
+}
+
+#search{
+    width: 100%;
+}
+
+.sign-in{
+    color: black;
+    background-color: white;
+}
+.sign-in:hover{
+    background-color: #FF9A5A;
+}
+
+.text-bg-dark{
+    background-color: white !important;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    color: black !important;
+}
+
+.img-profile{
+border-radius: 50%  ;
+}
+
+.profile-img{
+max-width: fit-content;
+display: inline-block;
+background-position: left;
+background-size: cover;
+}
+
+.categories{
+position: relative;
+}
+
+
+.trend-card{
+    border: 2px solid rgb(255, 251, 251);
+    width: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color:rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    transition: all 300ms ease-in-out;
+
+}
+.trend-card:hover{
+    
+    transform: scaleX(1.1);
+    border-radius: 20px;
+    transition-duration: 1s;
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    color: white;      
+}
+.trend-card-background{
+    position:relative;
+    width: auto;
+    border-radius: 20px;
+    background-color:rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+}
+.comment-card:hover, .like-card:hover, .share-card:hover{
+    color: #EF4765;
+}
+
+
+
+.post-card{
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    background-color: white;
+}
+
+.border{
+    border-radius: 20px;
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.post-img{
+    border-radius: 20px;
+
+}
+.lower-card{
+    margin-top: 1rem;
+}
+.comment-card, .like-card {
+    margin-right: 1rem;
+}
+
+
+ul{
+    list-style-type: none;
+    position: relative;
+
+}
+
+.profile-text{
+margin-block: auto;
+position: relative;
+
+}
+
+
+
+/* follow card */
+
+.follow{
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+}
+
+.follow-img-profile{
+    position: relative;
+    justify-content: center;
+    display: inline-block;
+    background-position: left;
+    border-radius: 50%  ;   
+}
+
+/* Takip-Button */
+
+.follow-btn {
+    position: relative;
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+
+.follow-btn:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.follow-btn:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+
+/*Giriş Yap-Kaydol */
+
+
+.login-card{
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    text-align: center;
+    width:auto;
+    background-color: white;
+    height: fit-content;
+}
